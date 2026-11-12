@@ -1,0 +1,34 @@
+const productos = [
+        {
+            "nombre" : "Laptop HP 240R G9, 14\" 1920x1080 Full HD, Intel Core i5-1335U, 16GB, 1TB SSD, Windows 11 Home, Español",
+            "caracteristicas" : "Intel Core,i5-1335U,No disponible,16GB,1TB,1920x1080 Full HD,,Español,Windows 11 Home",
+            "categoria" : "1" ,
+            "precio" : "12479",
+            "stock" : "7",
+            "url" :"https://www.cyberpuerta.mx/img/product/S/CP-HP-CUSTOM-AL2R1LT1TB-ea3ca1.png"
+        },
+        {
+            "nombre" : "Laptop HP 240R G10, 14\" 1920x1080 Full HD, Intel Core 5 120U, 8GB, 512GB SSD, Windows 11 Home, Español",
+            "caracteristicas" : "Intel Core 5,5 120U,No disponible,8GB,512GB,1920x1080 Full HD,,Español,Windows 11 Home",
+            "categoria" : "1" ,
+            "precio" : "10239",
+            "stock" : "15",
+            "url" :"https://www.cyberpuerta.mx/img/product/S/CP-HP-B77C3LT-8714fa.jpg"
+        },
+        {
+            "nombre" : "Laptop Gamer Gigabyte A16, 16\" 1920x1200, Intel Core i7-13620H, NVIDIA GeForce RTX 5050, 24GB, 1.5TB SSD, Windows 11 Home, Español",
+            "caracteristicas" : "Intel Core,i7-13620H,GeForce RTX 5050,24GB,1.5TB,1920x120,,Español,Windows 11 Home",
+            "categoria" : "1" ,
+            "precio" : "14239",
+            "stock" : "12",
+            "url" :"https://www.cyberpuerta.mx/img/product/S/CP-GIGABYTE-GA16E-5050CI72415M-1.jpg"
+        },  
+            {
+            "nombre" : "Laptop Lenovo ThinkBook 14 G8 IA, 14\" 1920x1200 WUXGA, Intel Core Ultra 7 255H, 32GB, 1TB SSD, Windows 11 Pro, Español",
+            "caracteristicas" : "Intel Core ultra 7,255H,No disponible,32GB,1TB,1920x120 WUXGA,,Español,Windows 11 Pro",
+            "categoria" : "1" ,
+            "precio" : "28819",
+            "stock" : "10",
+            "url" :"https://www.cyberpuerta.mx/img/product/S/CP-LENOVO-21SJ009GLM-58b76b.png"
+        }
+    ];
