@@ -1,19 +1,41 @@
-# React + Vite
+# React + Bootstrap
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Pruebas automatizadas con Vitest
 
-Currently, two official plugins are available:
+El proyecto utiliza Vitest, React Testing Library, jest-dom y jsdom para probar componentes React en un entorno DOM simulado.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Instalación
 
-## React Compiler
+```bash
+npm install
+```
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### Ejecutar las pruebas
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+```bash
+# Modo interactivo
+npm test
 
-## Expanding the Oxlint configuration
+# Ejecución única (CI)
+npm run test:run
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Cobertura
+
+Para generar reportes de cobertura:
+
+```bash
+npm install -D @vitest/coverage-v8
+npx vitest run --coverage
+```
+
+El reporte HTML se genera en `coverage/index.html`.
+
+### Pruebas incluidas
+
+- `Home.test.jsx`: renderizado de la vista de inicio.
+- `Navbar.test.jsx`: navegación principal y búsqueda.
+- `getCategoria.test.jsx`: carga asíncrona de categorías.
+- `galeriaProductos.test.jsx`: carga de productos, precios, paginación y navegación a alta y edición.
+
+Las peticiones HTTP se simulan mediante mocks de `fetch`; no se requiere ejecutar la API para estas pruebas.
